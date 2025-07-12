@@ -12,7 +12,7 @@ class TaskifyHomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFF7F6FF),
       appBar: AppBar(
-        title: const Text("Today's Tasks",
+        title: const Text("Taskify",
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
         centerTitle: true,
         backgroundColor: Colors.transparent,
