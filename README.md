@@ -1,16 +1,36 @@
-# taskify
+# 📝 Taskify – Minimal Task Manager App
 
-A new Flutter project.
+**Taskify** is a lightweight, modern task management Flutter app built using `flutter_bloc` and `isar` for seamless offline productivity. Easily add, track, and complete tasks with a simple, responsive UI.
 
-## Getting Started
+[👉 Download the App (APK)](https://drive.google.com/file/d/1shd_tx1TgzXyOz9IBI3xDxbeHOdfejjF/view?usp=sharing)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🚀 Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- ✅ Add, delete, and manage tasks
+- 📅 See tasks grouped by date
+- 🎯 Mark tasks as completed or in-progress
+- 🧠 Local storage using `Isar` (no internet needed)
+- ⚡ Smooth animations with `AnimatedSwitcher`
+- 🌙 Light & responsive UI with Flutter
+
+---
+
+## 🧱 Tech Stack
+
+| Tool/Package       | Purpose                                |
+|--------------------|----------------------------------------|
+| `flutter_bloc`     | State management                       |
+| `isar`             | Local NoSQL database                   |
+| `intl`             | Date formatting                        |
+| `equatable`        | Efficient state comparison             |
+| `flutter`          | Cross-platform UI framework            |
+
+---
+
+## 🧠 Architecture
+
+Taskify follows a **clean layered architecture**:
+
