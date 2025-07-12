@@ -12,14 +12,22 @@ class TaskListView extends StatelessWidget {
       buildWhen: (prev, curr) => curr is! TaskLoading,
       builder: (context, state) {
         if (state is TaskLoaded) {
+          if (state.tasks.isEmpty) {
+            return const Center(
+              child: Text(
+                'No tasks available',
+                style: TextStyle(fontSize: 16, color: Colors.grey),
+              ),
+            );
+          }
+
           return AnimatedSwitcher(
             duration: const Duration(milliseconds: 300),
             child: ListView.builder(
               key: ValueKey(state.tasks.length),
               padding: const EdgeInsets.symmetric(horizontal: 16),
               itemCount: state.tasks.length,
-              itemBuilder: (_, index) =>
-                  TaskCard(task: state.tasks[index]),
+              itemBuilder: (_, index) => TaskCard(task: state.tasks[index]),
             ),
           );
         } else if (state is TaskLoading) {

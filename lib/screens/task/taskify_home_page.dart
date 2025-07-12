@@ -16,13 +16,7 @@ class TaskifyHomePage extends StatelessWidget {
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
         centerTitle: true,
         backgroundColor: Colors.transparent,
-        elevation: 0,
-        actions: const [
-          Padding(
-            padding: EdgeInsets.only(right: 16),
-            child: Icon(Icons.notifications_none),
-          ),
-        ],
+       
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
