@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:taskify/data/isar/model/task.dart';
 import 'package:taskify/main.dart';
-import 'package:taskify/provider/task_provider_impl.dart';
+import 'package:taskify/provider/base/task_provider.dart';
 import 'package:taskify/utils/enum/filter_type.dart';
 
 
@@ -10,7 +10,7 @@ part 'taskify_home_event.dart';
 part 'taskify_home_state.dart';
 
 class TaskBloc extends Bloc<TaskEvent, TaskState> {
-  final provider = injector<TaskProviderImpl>();
+  final provider = injector<TaskProvider>();
 
 
  TaskBloc() : super(TaskLoading()) {
